@@ -24,6 +24,7 @@ li {
   padding: 1em;
   list-style-type: none;
   color: rgb(255, 255, 255);
+  transition: transform 0.3s ease-out;
 }
 
 a {
@@ -108,12 +109,17 @@ span {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
+  
 }
 #Contact {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+li:hover {
+    transform: translateY(8px);
+  }
 @media (max-width: 700px) {
   #projects-cards {
     display: grid;
